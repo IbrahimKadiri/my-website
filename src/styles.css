@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* === Thème Global === */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #C7D2FE); /* Dégradé */
+  background-attachment: fixed; /* Fixe le fond */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* S'assure que le fond couvre toute la hauteur */
+}
+section {
+  min-height: 100vh; /* Assure que chaque section prend au moins 100% de la hauteur de l'écran */
+}
+
+
