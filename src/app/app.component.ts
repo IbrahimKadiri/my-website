@@ -52,7 +52,6 @@ export class AppComponent implements OnInit, AfterViewInit {
           // Lorsque la section devient visible, met à jour l'URL
           const sectionId = entry.target.id;
           this._router.navigate([`${sectionId}`]);
-          console.log('entry', entry, 'sectionId', sectionId);
         }
       });
     }, options);

@@ -84,6 +84,10 @@ img {
   transition: filter 0.3s ease;
 }
 
+img.filter-invert  {
+  filter: invert(1); /* Pas de halo filtre */
+}
+
 img:hover {
   filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.8));
 }
