@@ -42,7 +42,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     const options = {
       root: null, // Observer le viewport
       rootMargin: '0px',
-      threshold: 0.5, // L'élément doit être visible à 50% pour que l'Observer se déclenche
+      threshold: 0.4, // L'élément doit être visible à 50% pour que l'Observer se déclenche
     };
 
     // Crée un nouvel IntersectionObserver
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         if (entry.isIntersecting) {
           // Lorsque la section devient visible, met à jour l'URL
           const sectionId = entry.target.id;
-          this._router.navigate([`/${sectionId}`]);
+          this._router.navigate([`${sectionId}`]);
           console.log('entry', entry, 'sectionId', sectionId);
         }
       });

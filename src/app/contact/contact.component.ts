@@ -14,7 +14,7 @@ export class ContactComponent {
   showPopup: boolean = false;
   errorMessage: string = '';  // Pour afficher les messages d'erreur
 
-  constructor(private contactService: ContactService) { }
+  constructor(private _contactService: ContactService) { }
 
   // Fonction de soumission du formulaire
   onSubmit(formData: any): void {
@@ -26,7 +26,7 @@ export class ContactComponent {
     console.log('Message envoyé avec succès!', formToSend);
 
     // Envoi du formulaire via le service
-    this.contactService.sendMessage(formToSend).subscribe(
+    this._contactService.sendMessage(formToSend).subscribe(
       response => {
         console.log('Message envoyé avec succès!', response, formToSend);
         this.showPopup = true;  // Afficher la pop-up de confirmation

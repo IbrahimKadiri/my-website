@@ -30,25 +30,25 @@
        
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a *ngFor="let item of menuItems" [appScrollTo]="item.id" class="rounded-lg text-sm px-4 py-2 text-sm font-medium text-gray-700 hover:bg-indigo-500 hover:text-white hover:transition-all duration-300 ease-in-out" [attr.aria-current]="item.id === 'home' ? 'page' : null" [ngClass]="{ 'bg-indigo-700 text-white': item.id === 'home' }">{{item.label}}</a>
+            <a *ngFor="let item of menuItems" [appScrollTo]="item.id" class="rounded-lg text-sm px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gradient-to-r hover:to-gray-500 hover:from-indigo-400 hover:text-white" [attr.aria-current]="item.id === currentRoute ? 'page' : null" [ngClass]="{ 'bg-gradient-to-r to-gray-700 from-indigo-500 text-white ': item.id === currentRoute }">{{item.label}}</a>
           </div>
         </div>  
       </div>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 shadow-sm">
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <!-- Language dropdown -->
         <div class="relative ml-3">
           <div>
-            <button (click)="toggleLangMenu()" type="button" class="relative flex p-2 bg-gray-200 hover:bg-indigo-600 transition " id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+            <button (click)="toggleLangMenu()" type="button" class="relative flex p-2 rounded-full bg-gradient-to-r to-gray-500 from-indigo-200 hover:bg-gradient-to-r hover:to-gray-500 hover:from-indigo-400 active:bg-gradient-to-r active:from-indigo-400 active:to-gray-500 transition" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">Open user menu</span>
-              <img src="assets/flag/{{selectedLanguage.icon}}" alt="{{selectedLanguage.code}} flag" class="w-8">
+              <img src="assets/flag/{{selectedLanguage.icon}}" alt="{{selectedLanguage.code}} flag" class="w-5">
             </button>
           </div>
 
           <div *ngIf="isLangMenuOpen" class="absolute right-0 z-10 mt-2 w-15 origin-top-right rounded-md bg-white py-1 ring-1 ring-black/5 focus:outline-hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
             <ng-container *ngFor="let lang of languagesList; index as i">
-              <a  *ngIf="lang.code !== selectedLanguage.code" (click)="selectLanguage(lang)" class="block px-4 py-2 text-sm text-gray-700 font-semibold hover:bg-indigo-500 hover:text-white hover:transition-all duration-300 ease-in-out" role="menuitem" tabindex="-1" [id]="'user-menu-item-'+i">
-                <img src="assets/flag/{{lang.icon}}" alt="{{lang.code}} flag" class="w-8">
+              <a  *ngIf="lang.code !== selectedLanguage.code" (click)="selectLanguage(lang)" class="block px-4 py-2 text-sm text-gray-700 font-semibold hover:bg-gradient-to-r hover:to-gray-500 hover:from-indigo-400 active:bg-gradient-to-r active:from-indigo-400 active:to-gray-500" role="menuitem" tabindex="-1" [id]="'user-menu-item-'+i">
+                <img src="assets/flag/{{lang.icon}}" alt="{{lang.code}} flag" class="w-5">
               </a>
             </ng-container>
             
@@ -56,13 +56,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div *ngIf="ismobileMenuOpen" class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pt-2 pb-3">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a *ngFor="let item of menuItems" [appScrollTo]="item.id" class="block rounded-lg text-sm px-4 py-2 text-base font-medium text-gray-700 hover:bg-indigo-500 hover:text-white hover:transition-all duration-300 ease-in-out" [attr.aria-current]="item.id === 'home' ? 'page' : null"  [ngClass]="{ 'bg-indigo-700 text-white': item.id === 'home' }">{{item.label}}</a>
+      <a *ngFor="let item of menuItems" [appScrollTo]="item.id" (click)="closeMenu()" class="block rounded-lg text-sm px-4 py-2 text-base font-medium text-gray-700 active:bg-gradient-to-r active:from-indigo-400 active:to-gray-500 active:transition-all duration-300 ease-in-out" [attr.aria-current]="item.id === currentRoute ? 'page' : null"  [ngClass]="{ 'bg-gradient-to-r to-gray-700 from-indigo-500 text-white': item.id === currentRoute }">{{item.label}}</a>
     </div>
   </div>
 </nav>
