@@ -7,18 +7,21 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
 import { FooterComponent } from './footer/footer.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import * as AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
-  imports: [NavBarComponent, HomeComponent, AboutComponent, ServicesComponent, ExpertiseComponent, ContactComponent, FooterComponent],
+  imports: [NavBarComponent, HomeComponent, AboutComponent, ServicesComponent, ExpertiseComponent, ContactComponent, FooterComponent, TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  constructor(private router: Router) {}
+  constructor(private _router: Router, private _translate: TranslateService) {
+    this._translate.setDefaultLang('FR');
+  }
   
   ngOnInit(): void {
     AOS.init({
@@ -48,7 +51,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         if (entry.isIntersecting) {
           // Lorsque la section devient visible, met à jour l'URL
           const sectionId = entry.target.id;
-          this.router.navigate([`/${sectionId}`]);
+          this._router.navigate([`/${sectionId}`]);
           console.log('entry', entry, 'sectionId', sectionId);
         }
       });

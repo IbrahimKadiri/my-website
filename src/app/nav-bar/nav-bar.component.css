@@ -1,0 +1,8 @@
+/* Transition pour la navbar */
+nav {
+    transition: transform 0.9s ease-out;
+  }
+  
+  nav.hidden {
+    transform: translateY(-100%); /* Cache la navbar en la déplaçant vers le haut */
+  }

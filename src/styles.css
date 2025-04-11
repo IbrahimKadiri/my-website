@@ -23,7 +23,70 @@ section {
   min-height: 100vh; /* Assure que chaque section prend au moins 100% de la hauteur de l'écran */
 }
 
-.clickable {
+.no-select{
+  user-select: none;
+}
+button, a  {
   cursor: pointer;
+  user-select: none;
 }
 
+/* Animation de l'effet typewriter */
+@keyframes typewriter {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+/* Animation de l'effet typewriter */
+@keyframes typewriter {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 27ch;
+  }
+  100% {
+    width: 27ch; /* reste à la fin pendant 20% de la durée */
+  }
+}
+
+/* Animation du clignotement du curseur */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #6366f1; /* Couleur indigo-500 de Tailwind */
+  }
+}
+
+/* Application de l'animation typewriter et blink */
+.animate-typewriter {
+  display: inline-block;
+  white-space: nowrap; /* Empêche le texte de se décomposer sur plusieurs lignes */
+  overflow: hidden; /* Cache le texte excédentaire */
+  border-right: 4px solid #6366f1; /* Le curseur est de couleur indigo-500 */
+  padding-right: 10px; /* Espace entre le texte et le curseur */
+  animation: typewriter 4s steps(27) infinite alternate, blink .7s step-end infinite; /* Animation de saisie et clignotement */
+  animation-iteration-count: infinite; /* Répéter l'animation à l'infini */
+  animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+}
+
+img {
+  filter: drop-shadow(0 0 20px rgba(99, 102, 241, 0.5)); /* indigo doux */
+  transition: filter 0.3s ease;
+}
+
+img:hover {
+  filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.8));
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.6); /* Indigo glow */
+}
