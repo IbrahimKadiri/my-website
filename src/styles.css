@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
 
 /* === Thème Global === */
 
@@ -65,6 +64,8 @@ button, a  {
     border-color: #6366f1; /* Couleur indigo-500 de Tailwind */
   }
 }
+
+
 
 /* Application de l'animation typewriter et blink */
 .animate-typewriter {
