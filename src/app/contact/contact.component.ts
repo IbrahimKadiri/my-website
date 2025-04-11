@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 export class ContactComponent {
   showPopup: boolean = false;
   errorMessage: string = '';  // Pour afficher les messages d'erreur
+  showToast = false;
 
   constructor(private _contactService: ContactService) { }
 
@@ -31,6 +32,11 @@ export class ContactComponent {
         console.log('Message envoyé avec succès!', response, formToSend);
         this.showPopup = true;  // Afficher la pop-up de confirmation
         this.errorMessage = '';  // Réinitialiser les messages d'erreur
+        this.showToast = true;
+         //  Masquer le toast après 3 secondes
+        setTimeout(() => {
+          this.showToast = false;
+        }, 3000);
       },
       error => {
         console.error('Erreur lors de l\'envoi du message:', error);

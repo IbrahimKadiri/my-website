@@ -42,7 +42,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     const options = {
       root: null, // Observer le viewport
       ootMargin: '0px 0px -50% 0px', // Observer avant que la section ne soit complètement visible
-      threshold: 0.4, // L'élément doit être visible à 50% pour que l'Observer se déclenche
+      threshold: 0.3, 
     };
 
     // Crée un nouvel IntersectionObserver
