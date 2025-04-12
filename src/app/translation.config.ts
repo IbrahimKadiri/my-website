@@ -8,7 +8,7 @@ export function httpTranslateLoader(http: HttpClient) {
 }
 
 export const translationProviders: any = TranslateModule.forRoot({
-  defaultLanguage: 'en',
+  defaultLanguage: 'fr',
   loader: {
     provide: TranslateLoader,
     useFactory: httpTranslateLoader,

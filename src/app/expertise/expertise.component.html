@@ -6,10 +6,10 @@
             </div>
         <p class="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
             
-            Une <span class="text-indigo-600 text-glow">expertise</span> solide, reconnue par mes <span class="text-indigo-600 text-glow">clients</span>
+            {{ 'EXPERTISES.TITLE.1' | translate }} <span class="text-indigo-600">{{ 'EXPERTISES.TITLE.2' | translate }}</span> {{ 'EXPERTISES.TITLE.3' | translate }} <span class="text-indigo-600">{{ 'EXPERTISES.TITLE.4' | translate }}</span>
         </p>
         <p class="mt-4 text-lg text-gray-600">
-            Découvrez les technologies que j’utilise régulièrement, ainsi que les entreprises avec lesquelles j’ai eu l’opportunité de collaborer au cours de ma carrière.
+            {{ 'EXPERTISES.DESCRIPTION' | translate }}
         </p>
         </div>
 
@@ -29,7 +29,7 @@
 
         <!-- CLIENTS -->
         <div class="mt-20" data-aos="fade-up" data-duration="2000" data-aos-delay="400">
-            <h3 class="text-center mt-4 text-lg text-gray-600 text-glow">Collaborations en tant que consultant chez :</h3>
+            <h3 class="text-center mt-4 text-lg text-gray-600 text-glow">{{ 'EXPERTISES.COLLAB' | translate }}</h3>
             <div class="mt-10 flex flex-wrap justify-center gap-10">
                 <img class="h-15 grayscale hover:grayscale-0 transition" src="assets/images/adneom.png" alt="Positive Thinking Company" />
                 <img class="h-15 grayscale hover:grayscale-0 transition" src="assets/images/proximus.png" alt="Proximus" />

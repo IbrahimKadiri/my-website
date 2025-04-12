@@ -7,10 +7,10 @@
         <img src="assets/images/collaboration.svg" alt="Contact Icon" class="w-45 h-45" />
       </div>
       <h2 class="mt-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-        Travaillons <span class="text-indigo-600 text-glow">ensemble</span> pour concrétiser vos projets !
+        {{ 'CONTACT.TITLE_1' | translate }} <span class="text-indigo-600">{{ 'CONTACT.TITLE_2' | translate }}</span> {{ 'CONTACT.TITLE_3' | translate }}
       </h2>
       <p class="mt-4 text-lg text-gray-900 font-semibold">
-        Si vous avez des <span class="text-indigo-600 text-glow">questions</span> ou souhaitez échanger sur vos <span class="text-indigo-600 text-glow">projets</span>, envoyez-moi un <span class="text-indigo-600 text-glow">message</span> et je reviendrai vers vous dès que possible.
+        {{ 'CONTACT.DESCRIPTION.1' | translate }} <span class="text-indigo-600">{{ 'CONTACT.DESCRIPTION.2' | translate }}</span> {{ 'CONTACT.DESCRIPTION.3' | translate }} <span class="text-indigo-600">{{ 'CONTACT.DESCRIPTION.4' | translate }}</span>, {{ 'CONTACT.DESCRIPTION.5' | translate }} <span class="text-indigo-600">{{ 'CONTACT.DESCRIPTION.6' | translate }}</span> {{ 'CONTACT.DESCRIPTION.7' | translate }}
       </p>
     </div>
 
@@ -21,7 +21,7 @@
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="mx-auto max-w-xl">
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
-              <label for="firstName" class="block text-sm font-semibold text-gray-900">Prénom</label>
+              <label for="firstName" class="block text-sm font-semibold text-gray-900">{{ 'CONTACT.FORM.FIRSTNAME' | translate }}</label>
               <div class="mt-2.5">
                 <input type="text" name="firstName" id="firstName" ngModel required
                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600">
@@ -30,7 +30,7 @@
             
 
             <div>
-              <label for="lastName" class="block text-sm font-semibold text-gray-900">Nom</label>
+              <label for="lastName" class="block text-sm font-semibold text-gray-900">{{ 'CONTACT.FORM.LASTNAME' | translate }}</label>
               <div class="mt-2.5">
                 <input type="text" name="lastName" id="lastName" ngModel required
                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600">
@@ -38,7 +38,7 @@
             </div>
 
             <div class="sm:col-span-2">
-              <label for="email" class="block text-sm font-semibold text-gray-900">Email</label>
+              <label for="email" class="block text-sm font-semibold text-gray-900">{{ 'CONTACT.FORM.EMAIL' | translate }}</label>
               <div class="mt-2.5">
                 <input type="email" name="email" id="email" ngModel required email
                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600">
@@ -46,7 +46,7 @@
             </div>
 
             <div class="sm:col-span-2">
-              <label for="message" class="block text-sm font-semibold text-gray-900">Message</label>
+              <label for="message" class="block text-sm font-semibold text-gray-900">{{ 'CONTACT.FORM.MESSAGE' | translate }}</label>
               <div class="mt-2.5">
                 <textarea name="message" id="message" ngModel required rows="4"
                           class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"></textarea>
@@ -56,7 +56,7 @@
             <div class="sm:col-span-2 mt-10">
               <button type="submit" [disabled]="!contactForm.valid"
                       class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 active:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                Envoyer
+                {{ 'CONTACT.FORM.SEND' | translate }}
               </button>
             </div>
           </div>
@@ -68,7 +68,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
     </svg>
-    <div class="ps-4 text-sm font-semibold">Message envoyé avec succès !</div>
+    <div class="ps-4 text-sm font-semibold">{{ 'CONTACT.FORM.RESPONSE' | translate }}</div>
   </div>
 </section>
 

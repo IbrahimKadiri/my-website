@@ -20,7 +20,10 @@ import 'aos/dist/aos.css';
 })
 export class AppComponent implements OnInit, AfterViewInit {
   constructor(private _router: Router, private _translate: TranslateService) {
-    this._translate.setDefaultLang('FR');
+    this._translate.addLangs(['en', 'fr', 'nl']);
+    const browserLang = this._translate.getBrowserLang(); // ex: "en", "fr"
+    const lang: any = browserLang?.toLowerCase();
+    this._translate.use(this._translate.getLangs().includes(lang) ? lang : 'en');
   }
   
   ngOnInit(): void {

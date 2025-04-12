@@ -30,8 +30,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     this.menuItems = this._dataService.menuItems;
     this.languagesList = this._dataService.languagesList;
-    this.selectedLanguage = this.languagesList[0];
-
+    this.selectedLanguage = this.languagesList.find((lang: any) => lang.code === this._translate.currentLang);
     // Écouter les événements de navigation et obtenir l'URL après la redirection
     this._router.events.pipe(
       filter(event => event instanceof NavigationEnd)  // Filtrer les événements pour les NavigationEnd

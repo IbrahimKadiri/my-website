@@ -1,0 +1,103 @@
+{
+    "NAV": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "SERVICES": "Services",
+      "EXPERTISES": "Expertises",
+      "CONTACT": "Contact"
+    },
+    "HOME": {
+      "FREELANCE": "Freelance Web Developer",
+      "TITLE_1": "Turn your ideas into",
+      "TITLE_2": "high-performance web solutions.",
+      "SUBTITLE": "Designing custom modern applications — from corporate websites to complex business apps.",
+      "CTA_1": "Book a meeting",
+      "CTA_2": "See my services"
+    },
+    "ABOUT": {
+      "TITLE_1": "Fullstack Developer - ",
+      "TITLE_2": "custom web solutions",
+      "DESCRIPTION_1": "With over",
+      "DESCRIPTION_EXP_YEAR": "7 years of experience",
+      "DESCRIPTION_2": ", I develop robust, scalable applications tailored to your business needs.",
+      "DESCRIPTION_3": "My approach focuses on quality, smooth communication, and efficient execution at every stage of the project.",
+      "ARGUMENT": {
+        "AGILE": {
+          "TITLE": "Agile methodology",
+          "TEXT": "Flexible and iterative management, adapted to your evolving needs."
+        },
+        "SOLUTIONS": {
+          "TITLE": "Tailored solutions",
+          "TEXT": "Tools designed to meet your specific challenges."
+        },
+        "COMMUNICATION": {
+          "TITLE": "Clear communication",
+          "TEXT": "Transparent follow-up and a relationship based on trust."
+        }
+      }
+    },
+    "SERVICES": {
+      "TITLE": {
+        "1": "Services",
+        "2": "designed for your",
+        "3": "goals"
+      },
+      "DESCRIPTION": "Tailored solutions for all profiles: entrepreneurs, startups, or large enterprises.",
+      "INDE": {
+        "TITLE": "Freelancers & Small Businesses",
+        "DESC": {
+          "1": "Corporate website creation",
+          "2": "Simple and high-performance applications",
+          "3": "E-commerce websites",
+          "4": "Personalized digital support",
+          "CTA": "Let's discuss your project"
+        }
+      },
+      "CONSULTING": {
+        "TITLE": "Enterprise Consulting",
+        "DESC": {
+          "1": "Custom development",
+          "2": "Audit & strategic support",
+          "3": "Project management",
+          "4": "DevOps / Cloud integration",
+          "CTA": "Let's schedule a meeting"
+        }
+      }
+    },
+    "EXPERTISES": {
+      "TITLE": {
+        "1": "A",
+        "2": "solid expertise",
+        "3": "recognized by my",
+        "4": "clients"
+      },
+      "DESCRIPTION": "Discover the technologies I regularly use, as well as the companies I have had the opportunity to collaborate with throughout my career.",
+      "COLLAB": "Collaborations as a consultant with:"
+    },
+    "CONTACT": {
+      "TITLE_1": "Let's work",
+      "TITLE_2": "together",
+      "TITLE_3": "to bring your projects to life!",
+      "DESCRIPTION": {
+        "1": "If you have any",
+        "2": "questions",
+        "3": "or would like to discuss your",
+        "4": "projects",
+        "5": ", send me a",
+        "6": "message",
+        "7": "and I will get back to you as soon as possible."
+      },
+      "FORM": {
+        "LASTNAME": "Last Name",
+        "FIRSTNAME": "First Name",
+        "EMAIL": "Email",
+        "MESSAGE": "Message",
+        "SEND": "Send",
+        "RESPONSE": "Message sent successfully!"
+      }
+    },
+    "FOOTER": {
+      "COPYRIGHT": "© 2025 Ibrahim Kadiri. All rights reserved."
+    }
+  }
+  

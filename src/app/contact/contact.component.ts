@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ContactService } from '../data/contact.services';
 import { FormsModule } from '@angular/forms';  // Import de FormsModule pour les formulaires
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
   selector: 'app-contact',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -15,7 +16,7 @@ export class ContactComponent {
   errorMessage: string = '';  // Pour afficher les messages d'erreur
   showToast = false;
 
-  constructor(private _contactService: ContactService) { }
+  constructor(private _contactService: ContactService, private _translateService: TranslateService) { }
 
   // Fonction de soumission du formulaire
   onSubmit(formData: any): void {

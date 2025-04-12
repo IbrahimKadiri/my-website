@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
   selector: 'app-about',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+  constructor(private _translateService: TranslateService){}
 }

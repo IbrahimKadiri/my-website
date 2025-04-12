@@ -4,10 +4,10 @@
       <img src="assets/images/outer-space.svg" alt="" class="w-40 h-40" />
     </div>
     <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-      Des <span class="text-indigo-600 text-glow">services</span> pensés pour vos <span class="text-indigo-600 text-glow">objectifs</span>
+      {{'SERVICES.TITLE.1' | translate }} <span class="text-indigo-600">{{'SERVICES.TITLE.2' | translate }}</span> {{'SERVICES.TITLE.3' | translate }} <span class="text-indigo-600">{{'SERVICES.TITLE.4' | translate }}</span>
     </h2>
     <p class="mt-4 text-lg text-gray-600">
-      Des solutions adaptées pour tous les profils : entrepreneurs, startups ou grandes entreprises.
+      {{'SERVICES.DESCRIPTION' | translate }}
     </p>
   </div>
 
@@ -16,50 +16,50 @@
     
     <!-- Carte Indépendants -->
     <div class="rounded-3xl border border-gray-200 bg-gradient-to-r to-gray-100 from-gray-200 p-8 shadow-sm hover:shadow-md transition">
-      <h3 class="text-lg font-semibold text-indigo-600">Indépendants & Petites entreprises</h3>
+      <h3 class="text-lg font-semibold text-indigo-600">{{'SERVICES.INDE.TITLE' | translate }}</h3>
       <ul class="mt-6 space-y-4 text-gray-900 text-sm leading-6">
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="w-5 h-5" />
-          Création de sites vitrines
+          {{'SERVICES.INDE.DESC.1' | translate }}
         </li>
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="w-5 h-5" />
-          Applications simples et performantes
+          {{'SERVICES.INDE.DESC.2' | translate }}
         </li>
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="w-5 h-5" />
-          Sites e-commerce
+          {{'SERVICES.INDE.DESC.3' | translate }}
         </li>
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="w-5 h-5" />
-          Accompagnement digital personnalisé
+          {{'SERVICES.INDE.DESC.4' | translate }}
         </li>
       </ul>
-      <a [appScrollTo]="'/contact'" class="mt-6 inline-block text-sm px-6 py-3 bg-indigo-500 text-white font-medium rounded-xl hover:bg-indigo-700 active:bg-indigo-700 transition shadow-md">Discutons de votre projet </a>
+      <a [appScrollTo]="'/contact'" class="mt-6 inline-block text-sm px-6 py-3 bg-indigo-500 text-white font-medium rounded-xl hover:bg-indigo-700 active:bg-indigo-700 transition shadow-md">{{'SERVICES.INDE.DESC.CTA' | translate }} </a>
     </div>
 
     <!-- Carte Entreprises -->
     <div class="rounded-3xl border border-gray-200 bg-gradient-to-r to-indigo-500 from-gray-900 p-8 text-white shadow-sm hover:shadow-lg transition">
-      <h3 class="text-lg font-semibold text-gray-300">Consulting Grandes Entreprises</h3>
+      <h3 class="text-lg font-semibold text-gray-300">{{'SERVICES.CONSULTING.TITLE' | translate }}</h3>
       <ul class="mt-6 space-y-4 text-gray-300 text-sm leading-6">
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="w-5 h-5 filter-invert" />
-          Développement sur mesure
+          {{'SERVICES.CONSULTING.DESC.1' | translate }}
         </li>
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="filter-none w-5 h-5 filter-invert" />
-          Audit & accompagnement stratégique
+          {{'SERVICES.CONSULTING.DESC.2' | translate }}
         </li>
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="filter-none w-5 h-5 filter-invert" />
-          Gestion de projet
+          {{'SERVICES.CONSULTING.DESC.3' | translate }}
         </li>
         <li class="flex items-start gap-x-2">
           <img src="assets/images/check.svg" alt="" class="filter-none w-5 h-5 filter-invert" />
-          Intégration DevOps / Cloud
+          {{'SERVICES.CONSULTING.DESC.4' | translate }}
         </li>
       </ul>
-      <a [appScrollTo]="'/contact'" class="mt-6 inline-block text-sm px-6 py-3 bg-indigo-500 text-white font-medium rounded-xl hover:bg-indigo-700 active:bg-indigo-700 transition shadow-lg">Prenons un rendez-vous</a>
+      <a [appScrollTo]="'/contact'" class="mt-6 inline-block text-sm px-6 py-3 bg-indigo-500 text-white font-medium rounded-xl hover:bg-indigo-700 active:bg-indigo-700 transition shadow-lg">{{'SERVICES.CONSULTING.DESC.CTA' | translate }}</a>
     </div>
   </div>
 </section>

@@ -9,36 +9,36 @@ export class DataService {
 
   menuItems: any = [
     {
-      label: 'Accueil', id: '/home'
+      label: 'HOME', id: '/home'
     },
     {
-      label: 'Présentation', id: '/about'
+      label: 'ABOUT', id: '/about'
     },
     {
-      label: 'Services', id: '/services'
+      label: 'SERVICES', id: '/services'
     },
     {
-      label: 'Expertises', id: '/expertises'
+      label: 'EXPERTISES', id: '/expertises'
     },
     {
-      label: 'Contact', id: '/contact'
+      label: 'CONTACT', id: '/contact'
     },
   ];
 
   languagesList: any = [
     {
       label: 'Francais',
-      code: 'FR',
+      code: 'fr',
       icon: 'FR.svg',
     },
     {
       label: 'Anglais',
-      code: 'EN',
+      code: 'en',
       icon: `EN.svg`,
     },
     {
       label: 'Néerlandais',
-      code: 'NL',
+      code: 'nl',
       icon: `NL.svg`,
     },
   ];
