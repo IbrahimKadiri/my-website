@@ -1,0 +1,102 @@
+{
+    "NAV": {
+      "HOME": "Home",
+      "ABOUT": "Over mij",
+      "SERVICES": "Diensten",
+      "EXPERTISES": "Expertises",
+      "CONTACT": "Contact"
+    },
+    "HOME": {
+      "FREELANCE": "Freelance Web DEV",
+      "TITLE_1": "Transformeer je ideeën in",
+      "TITLE_2": "hoogwaardige weboplossingen.",
+      "SUBTITLE": "Ontwikkeling van op maat gemaakte moderne applicaties — van bedrijfswebsites tot complexe zakelijke apps.",
+      "CTA_1": "Maak een afspraak",
+      "CTA_2": "Bekijk mijn diensten"
+    },
+    "ABOUT": {
+      "TITLE_1": "Fullstack Developer - ",
+      "TITLE_2": "op maat gemaakte weboplossingen",
+      "DESCRIPTION_1": "Met meer dan",
+      "DESCRIPTION_EXP_YEAR": "7 jaar ervaring",
+      "DESCRIPTION_2": ", ontwikkel ik robuuste, schaalbare applicaties die zijn afgestemd op jouw bedrijfsbehoeften.",
+      "DESCRIPTION_3": "Mijn aanpak is gericht op kwaliteit, soepele communicatie en efficiënte uitvoering in elke fase van het project.",
+      "ARGUMENT": {
+        "AGILE": {
+          "TITLE": "Agile methodologie",
+          "TEXT": "Flexibele en iteratieve managementaanpak, aangepast aan je veranderende behoeften."
+        },
+        "SOLUTIONS": {
+          "TITLE": "Op maat gemaakte oplossingen",
+          "TEXT": "Hulpmiddelen die zijn ontworpen om jouw specifieke uitdagingen aan te pakken."
+        },
+        "COMMUNICATION": {
+          "TITLE": "Duidelijke communicatie",
+          "TEXT": "Transparante follow-up en een relatie gebaseerd op vertrouwen."
+        }
+      }
+    },
+    "SERVICES": {
+      "TITLE": {
+        "1": "Diensten",
+        "2": "ontworpen voor je",
+        "3": "doelen"
+      },
+      "DESCRIPTION": "Op maat gemaakte oplossingen voor alle profielen: ondernemers, startups of grote bedrijven.",
+      "INDE": {
+        "TITLE": "Freelancers & Kleine Bedrijven",
+        "DESC": {
+          "1": "Corporate website creatie",
+          "2": "Eenvoudige en krachtige applicaties",
+          "3": "E-commerce websites",
+          "4": "Persoonlijke digitale ondersteuning",
+          "CTA": "Laten we je project bespreken"
+        }
+      },
+      "CONSULTING": {
+        "TITLE": "Consulting voor Grote Bedrijven",
+        "DESC": {
+          "1": "Op maat gemaakte ontwikkeling",
+          "2": "Audit & strategische ondersteuning",
+          "3": "Projectmanagement",
+          "4": "DevOps / Cloud integratie",
+          "CTA": "Laten we een afspraak inplannen"
+        }
+      }
+    },
+    "EXPERTISES": {
+      "TITLE": {
+        "1": "Een",
+        "2": "solide expertise",
+        "3": "erkend door mijn",
+        "4": "klanten"
+      },
+      "DESCRIPTION": "Ontdek de technologieën die ik regelmatig gebruik, evenals de bedrijven waarmee ik tijdens mijn carrière heb samengewerkt.",
+      "COLLAB": "Samenwerkingen als consultant met:"
+    },
+    "CONTACT": {
+      "TITLE_1": "Laten we samenwerken",
+      "TITLE_2": "om je projecten te realiseren!",
+      "TITLE_3": "Neem contact op!",
+      "DESCRIPTION": {
+        "1": "Als je vragen hebt",
+        "2": "of graag over je",
+        "3": "projecten wilt praten",
+        "4": ", stuur me een",
+        "5": "bericht",
+        "6": "en ik neem zo snel mogelijk contact met je op."
+      },
+      "FORM": {
+        "LASTNAME": "Achternaam",
+        "FIRSTNAME": "Voornaam",
+        "EMAIL": "E-mail",
+        "MESSAGE": "Bericht",
+        "SEND": "Versturen",
+        "RESPONSE": "Bericht succesvol verzonden!"
+      }
+    },
+    "FOOTER": {
+      "COPYRIGHT": "© 2025 Ibrahim Kadiri. Alle rechten voorbehouden."
+    }
+  }
+  

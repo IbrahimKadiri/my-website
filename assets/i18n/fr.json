@@ -1,0 +1,104 @@
+{
+    "NAV": {
+      "HOME": "Accueil",
+      "ABOUT": "Présentation",
+      "SERVICES": "Services",
+      "EXPERTISES": "Expertises",
+      "CONTACT": "Contact"
+    },
+    "HOME": {
+      "FREELANCE": "Développeur Web Freelance",
+      "TITLE_1": "Transformez vos idées en",
+      "TITLE_2": "solutions web performantes.",
+      "SUBTITLE": "Conception d'applications modernes sur mesure — du site vitrine à l'application métier complexe.",
+      "CTA_1": " Prendre un RDV",
+      "CTA_2": "Voir mes services"
+    },
+    "ABOUT": {
+      "TITLE_1": "Développeur fullstack - ",
+      "TITLE_2": "solutions web sur mesure",
+      "DESCRIPTION_1": "Avec plus de",
+      "DESCRIPTION_EXP_YEAR": "7 ans d’expérience",
+      "DESCRIPTION_2": ", je développe des applications robustes, scalables et adaptées à vos enjeux métiers.",
+      "DESCRIPTION_3": "Mon approche est centrée sur la qualité, la communication fluide et une exécution efficace à chaque étape du projet.",
+      "ARGUMENT": {
+        "AGILE": {
+            "TITLE": "Méthodologie agile",
+            "TEXT": "Gestion flexible et itérative, adaptée à vos besoins évolutifs."
+        },
+        "SOLUTIONS": {
+            "TITLE": "Solutions personnalisées",
+            "TEXT": "Des outils conçus pour répondre à vos défis spécifiques."
+        },
+        "COMMUNICATION": {
+            "TITLE": "Communication claire",
+            "TEXT": "Un suivi transparent et une relation de confiance."
+        }
+      }
+    },
+    "SERVICES": {
+      "TITLE": {
+        "1": "Des",
+        "2": "services",
+        "3": "pensés pour vos",
+        "4": "objectifs"
+      },
+      "DESCRIPTION": "Des solutions adaptées pour tous les profils : entrepreneurs, startups ou grandes entreprises.",
+      "INDE": {
+        "TITLE": "Indépendants & Petites entreprises",
+        "DESC": {
+            "1": "Création de sites vitrines",
+            "2": "Applications simples et performantes",
+            "3": "Sites e-commerce",
+            "4": "Accompagnement digital personnalisé",
+            "CTA": "Discutons de votre projet"
+        }
+      },
+      "CONSULTING": {
+        "TITLE": "Consulting Grandes Entreprises",
+        "DESC": {
+            "1": "Développement sur mesure",
+            "2": "Audit & accompagnement stratégique",
+            "3": "Gestion de projet",
+            "4": "Intégration DevOps / Cloud",
+            "CTA": "Prenons un rendez-vous"
+        }
+      }
+    },
+    "EXPERTISES": {
+      "TITLE": {
+        "1": "Une",
+        "2": "expertise",
+        "3": "solide, reconnue par mes",
+        "4": "clients"
+      },
+      "DESCRIPTION": "Découvrez les technologies que j’utilise régulièrement, ainsi que les entreprises avec lesquelles j’ai eu l’opportunité de collaborer au cours de ma carrière.",
+      "COLLAB": "Collaborations en tant que consultant chez :"
+    },
+    "CONTACT": {
+      "TITLE_1": "Travaillons",
+      "TITLE_2": "ensemble",
+      "TITLE_3": "pour concrétiser vos projets !",
+      "DESCRIPTION": {
+        "1": "Si vous avez des",
+        "2": "questions",
+        "3": "ou souhaitez échanger sur vos",
+        "4": "projets",
+        "5": ", envoyez-moi un",
+        "6": "message",
+        "7": "et je reviendrai vers vous dès que possible."
+      },
+      "FORM": {
+        "LASTNAME": "Nom",
+        "FIRSTNAME": "Prénom",
+        "EMAIL": "Email",
+        "MESSAGE": "Message",
+        "SEND": "Envoyer",
+        "RESPONSE": "Message envoyé avec succès !"
+      }
+    },
+    "FOOTER": {
+      "COPYRIGHT": "© 2025 Ibrahim Kadiri. Tous droits réservés."
+    }
+  }
+  
