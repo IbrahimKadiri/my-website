@@ -26,6 +26,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this._translate.use(this._translate.getLangs().includes(lang) ? lang : 'en');
   }
   
+  
   ngOnInit(): void {
     AOS.init({
       offset: 200,   // Décale l'animation de 200px avant d'être déclenchée

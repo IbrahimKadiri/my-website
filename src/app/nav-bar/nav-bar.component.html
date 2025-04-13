@@ -30,7 +30,7 @@
        
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a *ngFor="let item of menuItems" [appScrollTo]="item.id" class="rounded-lg text-sm px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gradient-to-r hover:to-gray-500 hover:from-indigo-400 hover:text-white" [attr.aria-current]="item.id === currentRoute ? 'page' : null" [ngClass]="{ 'bg-gradient-to-r to-gray-700 from-indigo-500 text-white ': item.id === currentRoute }">{{'NAV.'+item.label | translate}}</a>
+            <a *ngFor="let item of menuItems" [appScrollTo]="item.id" class="rounded-lg text-sm px-4 py-2 font-medium text-gray-700 hover:bg-gradient-to-r hover:to-gray-500 hover:from-indigo-400 hover:text-white" [attr.aria-current]="item.id === currentRoute ? 'page' : null" [ngClass]="{ 'bg-gradient-to-r to-gray-700 from-indigo-500 text-white ': item.id === currentRoute }">{{'NAV.'+item.label | translate}}</a>
           </div>
         </div>  
       </div>

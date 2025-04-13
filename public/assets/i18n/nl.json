@@ -54,8 +54,9 @@
         }
       },
       "CONSULTING": {
-        "TITLE": "Consulting voor Grote Bedrijven",
+        "TITLE": "Grote Bedrijven",
         "DESC": {
+          "0": "Consulting",
           "1": "Op maat gemaakte ontwikkeling",
           "2": "Audit & strategische ondersteuning",
           "3": "Projectmanagement",

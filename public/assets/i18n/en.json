@@ -54,8 +54,9 @@
         }
       },
       "CONSULTING": {
-        "TITLE": "Enterprise Consulting",
+        "TITLE": "Enterprise",
         "DESC": {
+          "0": "Consulting",
           "1": "Custom development",
           "2": "Audit & strategic support",
           "3": "Project management",
