@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { ContactService } from '../data/contact.services';
 import { FormsModule } from '@angular/forms';  // Import de FormsModule pour les formulaires
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
+declare let L: any;
 
 @Component({
   standalone: true,
@@ -11,12 +13,25 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent {
+export class ContactComponent implements AfterViewInit {
   showPopup: boolean = false;
   errorMessage: string = '';  // Pour afficher les messages d'erreur
   showToast = false;
-
+  email = 'elkadiri.ibrahim@hotmail.com';
+  
   constructor(private _contactService: ContactService, private _translateService: TranslateService) { }
+  ngAfterViewInit(): void {
+    const map = L.map('map').setView([50.8503, 4.3517], 13); // Bruxelles
+  
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+  
+    L.marker([50.8503, 4.3517]).addTo(map)
+      .bindPopup('Bruxelles')
+      .openPopup();
+  }
 
   // Fonction de soumission du formulaire
   onSubmit(formData: any): void {
