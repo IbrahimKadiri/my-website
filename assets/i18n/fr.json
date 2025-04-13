@@ -55,8 +55,9 @@
         }
       },
       "CONSULTING": {
-        "TITLE": "Consulting Grandes Entreprises",
+        "TITLE": "Grandes Entreprises",
         "DESC": {
+            "0": "Consultance",
             "1": "Développement sur mesure",
             "2": "Audit & accompagnement stratégique",
             "3": "Gestion de projet",
