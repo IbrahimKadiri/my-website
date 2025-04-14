@@ -14,10 +14,8 @@ declare let L: any;
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements AfterViewInit {
-  showPopup: boolean = false;
-  errorMessage: string = '';  // Pour afficher les messages d'erreur
+  errorMessage = false; 
   showToast = false;
-  email = 'elkadiri.ibrahim@hotmail.com';
   
   constructor(private _contactService: ContactService, private _translateService: TranslateService) { }
   ngAfterViewInit(): void {
@@ -46,8 +44,7 @@ export class ContactComponent implements AfterViewInit {
     this._contactService.sendMessage(formToSend).subscribe(
       response => {
         console.log('Message envoyé avec succès!', response, formToSend);
-        this.showPopup = true;  // Afficher la pop-up de confirmation
-        this.errorMessage = '';  // Réinitialiser les messages d'erreur
+        this.errorMessage = false;  // Réinitialiser les messages d'erreur
         this.showToast = true;
          //  Masquer le toast après 3 secondes
         setTimeout(() => {
@@ -56,13 +53,13 @@ export class ContactComponent implements AfterViewInit {
       },
       error => {
         console.error('Erreur lors de l\'envoi du message:', error);
-        this.errorMessage = 'Une erreur est survenue, veuillez réessayer.';  // Afficher un message d'erreur
+        this.errorMessage = true;  // Afficher un message d'erreur
       }
     );
   }
 
   // Fonction pour fermer la pop-up
-  closePopup(): void {
-    this.showPopup = false;
+  closeToast(): void {
+    this.showToast = false;
   }
 }
